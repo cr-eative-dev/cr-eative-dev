@@ -543,7 +543,7 @@ export const fallback = (props: Props & { width: number }) => {
 				<p>${BODY_COPY.split('')
           .map((c, i) => `<span class="fade-in" style="--i: ${i};">${c}</span>`)
           .join('')}</p>
-				<p class="hint fade-in">— I'm all for the foxy browser, but try Chrome/Safari for this one!</p>
+				<p class="hint fade-in">— Please try Chrome/Safari for this one! Firefox is not supported.</p>
 			</div>
 		</main>
 	`;

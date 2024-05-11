@@ -22,12 +22,12 @@ const worker: ExportedHandler = {
     } else if (section === 'link-website') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('Website');
-    } else if (section === 'link-twitter') {
+    } else if (section === 'link-linkedin') {
       const index = Number(searchParams.get('i')) ?? 0;
-      content = link({ height: 18, width: 100, index, theme })('Twitter');
+      content = link({ height: 18, width: 100, index, theme })('Linkedin');
     } else if (section === 'link-instagram') {
       const index = Number(searchParams.get('i')) ?? 0;
-      content = link({ height: 18, width: 100, index, theme })('Instagram');
+      content = link({ height: 18, width: 100, index, theme })('GitHub');
     } else if (section == 'fallback') {
       content = fallback({ height: 180, width: 420, theme });
     } else {
