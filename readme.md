@@ -2,7 +2,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.tools-ft-byte.workers.dev?section=top&theme=dark">
   <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=top&theme=light" width="100%" height="20" align="left">
 </picture>
-<a href="https://terkel.com">
+<a href="">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-website&theme=dark" label="Visit">
     <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-website&theme=light&i=0" alt="visit my website" width="100" height="18px" align="left">
