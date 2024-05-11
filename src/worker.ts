@@ -25,7 +25,7 @@ const worker: ExportedHandler = {
     } else if (section === 'link-linkedin') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('Linkedin');
-    } else if (section === 'link-instagram') {
+    } else if (section === 'link-github') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('GitHub');
     } else if (section == 'fallback') {
