@@ -9,17 +9,17 @@
   </picture>
 </a>
 <img src="data:null;," width="100%" height="0" align="left" alt="">
-<a href="https://twitter.com/terkelg">
+<a href="www.linkedin.com/in/cr-eative-dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-twitter&theme=dark">
-    <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-twitter&theme=light&i=1" alt="visit my Twitter/X profile" width="100" height="18" align="left">
+    <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-twitter&theme=light&i=1" alt="visit my Linkedin profile" width="100" height="18" align="left">
   </picture>
 </a>
 <img src="data:null;," width="100%" height="0" align="left" alt="">
-<a href="https://www.instagram.com/terkelg">
+<a href="https://github.com/cr-eative-dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-instagram&theme=dark">
-    <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-instagram&theme=light&i=2" alt="visit my Instagram" width="100" height="18" align="left">
+    <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=link-instagram&theme=light&i=2" alt="visit my GitHub" width="100" height="18" align="left">
   </picture>
 </a>
 <img src="data:null;," width="100%" height="0" align="left" alt="">
