@@ -2,7 +2,7 @@ import type { Year } from './worker';
 
 const BP_MEDIUM = 550;
 const BP_LARGE = 700;
-const BODY_COPY = `I'm a full-stack software engineer, 3D artist and creative director.`;
+const BODY_COPY = `Software developer, 3D artist and creative director.`;
 
 interface Props {
   width?: number;
