@@ -34,21 +34,21 @@ const svg = (styles: string, html: string, attributes: Attributes) => {
 
 export const shared = /* css */ `
 	:root {
-		--color-text-light: #255DF6;
-		--color-dot-bg-0-light: #EBEDF0;
-		--color-dot-bg-1-light: #A7BEFB;
-		--color-dot-bg-2-light: #628BF9;
-		--color-dot-bg-3-light: #4071F7;
-		--color-dot-bg-4-light: #255DF6;
-		--color-dot-border-light: rgb(0 0 0 / 0.06);
+		--color-text-light: #FFFFFF; /* White */
+        --color-dot-bg-0-light: #1F1F1F; /* Very dark grey */
+        --color-dot-bg-1-light: #333333; /* Dark grey */
+        --color-dot-bg-2-light: #4D4D4D; /* Medium dark grey */
+        --color-dot-bg-3-light: #666666; /* Medium grey */
+        --color-dot-bg-4-light: #999999; /* Light grey */
+        --color-dot-border-light: rgb(255 255 255 / 0.06); /* White with opacity */
 
-		--color-text-dark: #255DF6;
-		--color-dot-bg-0-dark: #171B21;
-		--color-dot-bg-1-dark: #152A62;
-		--color-dot-bg-2-dark: #2048B3;
-		--color-dot-bg-3-dark: #1951EB;
-		--color-dot-bg-4-dark: #0048FF;
-		--color-dot-border-dark: rgb(0 0 0 / 0.06);
+        --color-text-dark: #1F1F1F; /* Very dark grey */
+        --color-dot-bg-0-dark: #EBEDF0; /* Light grey */
+        --color-dot-bg-1-dark: #A7BEFB; /* Light blue */
+        --color-dot-bg-2-dark: #628BF9; /* Medium blue */
+        --color-dot-bg-3-dark: #4071F7; /* Dark blue */
+        --color-dot-bg-4-dark: #255DF6; /* Very dark blue */
+        --color-dot-border-dark: rgb(255 255 255 / 0.06); /* White with opacity */
 
 		/* Initial animation offset... */
 		--default-delay: 1s;
