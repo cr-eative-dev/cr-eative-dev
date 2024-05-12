@@ -34,7 +34,7 @@ const svg = (styles: string, html: string, attributes: Attributes) => {
 
 export const shared = /* css */ `
 	:root {
-		--color-text-light: #255DF6;
+		--color-text-light: #000000;
 		--color-dot-bg-0-light: #EBEDF0;
 		--color-dot-bg-1-light: #A7BEFB;
 		--color-dot-bg-2-light: #628BF9;
@@ -42,7 +42,7 @@ export const shared = /* css */ `
 		--color-dot-bg-4-light: #255DF6;
 		--color-dot-border-light: rgb(0 0 0 / 0.06);
 
-		--color-text-dark: #255DF6;
+		--color-text-dark: #FFFFFF;
 		--color-dot-bg-0-dark: #171B21;
 		--color-dot-bg-1-dark: #152A62;
 		--color-dot-bg-2-dark: #2048B3;
