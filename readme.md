@@ -29,5 +29,5 @@
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.tools-ft-byte.workers.dev?section=main&theme=dark">
-  <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=main&theme=light" alt="Software developer, 3D artist and creative director." width="100%" height="290" align="left">
+  <img src="https://cr-eative-dev.tools-ft-byte.workers.dev?section=main&theme=light" alt="Software Developer, 3D Artist and Creative Director." width="100%" height="290" align="left">
 </picture>
