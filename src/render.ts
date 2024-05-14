@@ -36,10 +36,10 @@ export const shared = /* css */ `
 	:root {
 		--color-text-light: #000000;
 		--color-dot-bg-0-light: #EBEDF0;
-		--color-dot-bg-1-light: #A7BEFB;
-		--color-dot-bg-2-light: #628BF9;
-		--color-dot-bg-3-light: #4071F7;
-		--color-dot-bg-4-light: #161616;
+		--color-dot-bg-1-light: #6e6e6e;
+		--color-dot-bg-2-light: #3d3d3d;
+		--color-dot-bg-3-light: #202020;
+		--color-dot-bg-4-light: #020202;
 		--color-dot-border-light: rgb(0 0 0 / 0.06);
 
 		--color-text-dark: #FFFFFF;
