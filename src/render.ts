@@ -39,7 +39,7 @@ export const shared = /* css */ `
 		--color-dot-bg-1-light: #A7BEFB;
 		--color-dot-bg-2-light: #628BF9;
 		--color-dot-bg-3-light: #4071F7;
-		--color-dot-bg-4-light: #255DF6;
+		--color-dot-bg-4-light: #161616;
 		--color-dot-border-light: rgb(0 0 0 / 0.06);
 
 		--color-text-dark: #FFFFFF;
@@ -47,7 +47,7 @@ export const shared = /* css */ `
 		--color-dot-bg-1-dark: #152A62;
 		--color-dot-bg-2-dark: #2048B3;
 		--color-dot-bg-3-dark: #1951EB;
-		--color-dot-bg-4-dark: #0048FF;
+		--color-dot-bg-4-dark: #2a2a2a;
 		--color-dot-border-dark: rgb(0 0 0 / 0.06);
 
 		/* Initial animation offset... */
