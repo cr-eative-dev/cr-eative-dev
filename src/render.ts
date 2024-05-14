@@ -44,10 +44,10 @@ export const shared = /* css */ `
 
 		--color-text-dark: #FFFFFF;
 		--color-dot-bg-0-dark: #171B21;
-		--color-dot-bg-1-dark: #152A62;
-		--color-dot-bg-2-dark: #2048B3;
-		--color-dot-bg-3-dark: #1951EB;
-		--color-dot-bg-4-dark: #2a2a2a;
+		--color-dot-bg-1-dark: #bdbdbd;
+		--color-dot-bg-2-dark: #dadada;
+		--color-dot-bg-3-dark: #eeeeee;
+		--color-dot-bg-4-dark: #ffffff;
 		--color-dot-border-dark: rgb(0 0 0 / 0.06);
 
 		/* Initial animation offset... */
