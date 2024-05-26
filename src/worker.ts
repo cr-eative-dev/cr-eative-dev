@@ -62,8 +62,6 @@ const worker: ExportedHandler = {
           acc += size[0] + options.year.gap;
           return acc;
         }, 0) - options.year.gap;
-
-      content = main({ height: 0, years, sizes, length, location, theme, ...options });
     }
 
     return new Response(content, {
