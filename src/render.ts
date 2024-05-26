@@ -405,7 +405,7 @@ export const top = (props: Props & { contributions: number }) => {
 
   const html = /*html*/ `
 		<div class="wrapper grid label">
-			<div class="menu fade-in">Software Developer, 3D Artist and Creative Director.</div>
+			<div class="menu fade-in">Software Developer & 3D Artist.</div>
 			<div class="contributions fade-in">
 				<span class="shine">${(props.contributions / 1000).toFixed(1)}k</span> Contributions
 			</div>
