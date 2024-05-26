@@ -206,105 +206,94 @@ export const main = (props: Props & Main) => {
 			--size-year-gap: ${props.year.gap};
 			--size-label-height: 20;
 			--duration: 360;
-		}
-
-		.wrapper {
+		  }
+	  
+		  .wrapper {
 			align-items: flex-end;
 			grid-template-rows: 1fr auto;
-			row-gap: 20px;
-		}
-
-		.intro {
+			row-gap: 10px; /* Reduced from 20px to 10px */
+		  }
+	  
+		  .intro {
 			contain: content;
 			grid-area: 1 / 1 / span 1 / span 6;
 			font-size: 18px;
 			font-weight: 300;
-		}
-		.intro span {
-			contain: content;
-			--duration: 980ms;
-			--delay: calc(var(--animate-in-copy-delay) + var(--i) * 10ms);
-		}
-		.intro span {
-			contain: content;
-			--duration: 980ms;
-			--delay: calc(var(--animate-in-copy-delay) + var(--i) * 10ms);
-		}
-
-		@media (width > ${BP_MEDIUM}px) {
+		  }
+	  
+		  @media (width > ${BP_MEDIUM}px) {
 			.intro {
-				grid-area: 1 / 3 / span 1 / span 4;
-				font-size: 22px;
+			  grid-area: 1 / 3 / span 1 / span 4;
+			  font-size: 22px;
 			}
-		}
-		@media (width > ${BP_LARGE}px) {
+		  }
+		  @media (width > ${BP_LARGE}px) {
 			.intro {
-				grid-area: 1 / 4 / span 1 / span 3;
+			  grid-area: 1 / 4 / span 1 / span 3;
 			}
-		}
-
-		.graph {
+		  }
+	  
+		  .graph {
 			--delay: var(--animate-in-graph-delay);
 			grid-area: 2 / 1 / span 1 / span 6;
-		}
-
-		.years {
+		  }
+	  
+		  .years {
 			--_w: var(--w);
 			--_h: calc(var(--h) + var(--size-label-height));
-
 			display: flex;
 			gap: calc(var(--size-year-gap) * 1px);
-
 			contain: strict;
 			inline-size: calc(var(--_w) * 1px);
 			block-size: calc(var(--_h) * 1px);
 			will-change: transform;
 			backface-visibility: hidden;
 			transform: translateZ(0);
-
 			animation-name: scroll, fade-in;
 			animation-timing-function: linear, ease-out;
 			animation-duration: calc(30s + (var(--_w) * 0.06s)), 2.5s;
 			animation-fill-mode: both, both;
 			animation-delay: 2s, var(--animate-in-graph-delay);
-		}
-		@keyframes scroll {
+		  }
+	  
+		  @keyframes scroll {
 			0% {
-				transform: translateX(60px);
+			  transform: translateX(60px);
 			}
 			100% {
-				transform: translateX(calc(-100% + 100cqw));
+			  transform: translateX(calc(-100% + 100cqw));
 			}
-		}
-
-		.year {
+		  }
+	  
+		  .year {
 			contain: strict;
 			content-visibility: auto;
 			inline-size: calc(var(--w) * 1px);
 			block-size: calc(var(--_h) * 1px);
-		}
-
-		.year__label {
+		  }
+	  
+		  .year__label {
 			contain: strict;
 			block-size: calc(var(--size-label-height) * 1px);
 			content-visibility: auto;
 			display: flex;
 			align-items: end;
-		}
-		.year__days {
+		  }
+	  
+		  .year__days {
 			contain: content;
 			display: grid;
 			grid-auto-flow: column;
 			grid-template-rows: repeat(var(--rows), calc(var(--size-dot) * 1px));
 			grid-auto-columns: calc(var(--size-dot) * 1px);
 			gap: calc(var(--size-dot-gap) * 1px);
-
 			contain: strict;
 			content-visibility: auto;
 			inline-size: calc(var(--w) * 1px);
 			block-size: calc(var(--h) * 1px);
-		}
-		.year__days .dot {
+		  }
+	  
+		  .year__days .dot {
 			contain: strict;
 			content-visibility: auto;
 			aspect-ratio: 1;
@@ -313,13 +302,14 @@ export const main = (props: Props & Main) => {
 			border: calc(var(--size-dot) * 0.075 * 1px) solid var(--color-dot-border);
 			border-radius: calc(var(--size-dot) * 0.15 * 1px);
 			will-change: transform;
-		}
-		.dot--0 { background-color: var(--color-dot-bg-0); }
-		.dot--1 { background-color: var(--color-dot-bg-1); }
-		.dot--2 { background-color: var(--color-dot-bg-2); }
-		.dot--3 { background-color: var(--color-dot-bg-3); }
-		.dot--4 { background-color: var(--color-dot-bg-4); }
-	`;
+		  }
+	  
+		  .dot--0 { background-color: var(--color-dot-bg-0); }
+		  .dot--1 { background-color: var(--color-dot-bg-1); }
+		  .dot--2 { background-color: var(--color-dot-bg-2); }
+		  .dot--3 { background-color: var(--color-dot-bg-3); }
+		  .dot--4 { background-color: var(--color-dot-bg-4); }
+		`;
 
   const format = (date: Date) =>
     date.toLocaleDateString('en-US', {
@@ -356,55 +346,58 @@ export const top = (props: Props & { contributions: number }) => {
 
 		:root {
 			--size-height: ${props.height};
-		}
-
-		.wrapper {
+		  }
+	  
+		  .wrapper {
 			align-items: center;
-		}
-
-		.menu {
+			row-gap: 10px; /* Add this to reduce gap */
+		  }
+	  
+		  .menu {
 			--delay: var(--animate-in-menu-delay);
 			contain: content;
 			text-align: left;
 			grid-area: 1 / 1 / span 1 / span 2;
-		}
-		.contributions {
+		  }
+	  
+		  .contributions {
 			--delay: var(--animate-in-contributions-delay);
 			contain: strict; /* hide, show later */
 			grid-area: 1 / 3 / span 1 / span 2;
-		}
-		.readme {
+		  }
+	  
+		  .readme {
 			--delay: var(--animate-in-readme-delay);
 			contain: content;
 			text-align: right;
 			grid-area: 1 / 5 / span 1 / span 2;
-		}
-
-		@media (width > ${BP_MEDIUM}px) {
+		  }
+	  
+		  @media (width > ${BP_MEDIUM}px) {
 			.menu {
-				grid-area: 1 / 1 / span 1 / span 2;
+			  grid-area: 1 / 1 / span 1 / span 2;
 			}
 			.contributions {
-				contain: content; /* show agian */
-				grid-area: 1 / 3 / span 1 / span 2;
+			  contain: content; /* show again */
+			  grid-area: 1 / 3 / span 1 / span 2;
 			}
 			.readme {
-				grid-area: 1 / 5 / span 1 / span 2;
+			  grid-area: 1 / 5 / span 1 / span 2;
 			}
-		}
-
-		@media (width > ${BP_LARGE}px) {
+		  }
+	  
+		  @media (width > ${BP_LARGE}px) {
 			.menu {
-				grid-area: 1 / 1 / span 1 / span 3;
+			  grid-area: 1 / 1 / span 1 / span 3;
 			}
 			.contributions {
-				grid-area: 1 / 4 / span 1 / span 2;
+			  grid-area: 1 / 4 / span 1 / span 2;
 			}
 			.readme {
-				grid-area: 1 / 6 / span 1 / span 1;
+			  grid-area: 1 / 6 / span 1 / span 1;
 			}
-		}
-	`;
+		  }
+		`;
 
   const html = /*html*/ `
 		<div class="wrapper grid label">
