@@ -206,20 +206,25 @@ export const main = (props: Props & Main) => {
 			--size-year-gap: ${props.year.gap};
 			--size-label-height: 20;
 			--duration: 360;
-		}
-
-		.wrapper {
-			align-items: flex;
+		  }
+		
+		  .wrapper {
+			align-items: flex-end;
 			grid-template-rows: 1fr auto;
-			row-gap: 20px;
-		}
-
-		.intro {
+			row-gap: 10px; /* Reduced gap */
+		  }
+		
+		  .intro {
 			contain: content;
-			grid-area: 1 / 1 / span 1 / span 6;
+			grid-area: 1 / 1 / span 1 / span 3; /* Span fewer columns */
 			font-size: 18px;
 			font-weight: 300;
-		}
+			text-align: left; /* Align text to the left */
+		  }
+		
+		  .intro p {
+			margin: 0; /* Ensure no extra space */
+		  }
 		.intro span {
 			contain: content;
 			--duration: 980ms;
