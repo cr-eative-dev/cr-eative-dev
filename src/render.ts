@@ -206,34 +206,20 @@ export const main = (props: Props & Main) => {
 			--size-year-gap: ${props.year.gap};
 			--size-label-height: 20;
 			--duration: 360;
-		  }
-		
-		  .wrapper {
-			align-items: flex-start; /* Align items to the start */
-			grid-template-rows: auto auto; /* Set rows to auto height */
-			row-gap: 10px; /* Reduced gap */
-			contain: strict;
-			block-size: auto; /* Adjusted from fixed height to auto */
-			container-type: inline-size;
-			position: relative;
-			overflow: clip;
-			font-family: -apple-system, BlinkMacSystemFont, "Courier", monospace, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-			color: var(--color-text);
-			display: grid; /* Ensure display is grid */
-		  }
-		
-		  .intro {
+		}
+
+		.wrapper {
+			align-items: flex;
+			grid-template-rows: 1fr auto;
+			row-gap: 20px;
+		}
+
+		.intro {
 			contain: content;
-			grid-area: 1 / 1 / span 1 / span 3; /* Span fewer columns */
+			grid-area: 1 / 1 / span 1 / span 6;
 			font-size: 18px;
 			font-weight: 300;
-			text-align: left; /* Align text to the left */
-			margin-bottom: 0; /* Remove any bottom margin */
-		  }
-		
-		  .intro p {
-			margin: 0; /* Ensure no extra space */
-		  }
+		}
 		.intro span {
 			contain: content;
 			--duration: 980ms;
