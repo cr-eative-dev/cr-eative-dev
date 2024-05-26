@@ -344,10 +344,7 @@ export const main = (props: Props & Main) => {
 		</main>
 	`;
 
-  return svg(styles, html, {
-    height: `${props.height}`,
-    'data-theme': `${props.theme}`
-  });
+  return;
 };
 
 export const top = (props: Props & { contributions: number }) => {
@@ -408,7 +405,7 @@ export const top = (props: Props & { contributions: number }) => {
 
   const html = /*html*/ `
 		<div class="wrapper grid label">
-			<div class="menu fade-in">Menu</div>
+			<div class="menu fade-in">Software Developer, 3D Artist and Creative Director.</div>
 			<div class="contributions fade-in">
 				<span class="shine">${(props.contributions / 1000).toFixed(1)}k</span> Contributions
 			</div>
