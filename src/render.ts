@@ -2,7 +2,7 @@ import type { Year } from './worker';
 
 const BP_MEDIUM = 550;
 const BP_LARGE = 700;
-const BODY_COPY = `Software Developer, 3D Artist and Creative Director.`;
+const BODY_COPY = `Software Developer, 3D Technical Artist and Creative Director. I'm passionate about writing efficient & fast code, exploring the web's possibilities, and blending design with technology to craft innovative solutions.`;
 
 interface Props {
   width?: number;
@@ -417,7 +417,7 @@ export const top = (props: Props & { contributions: number }) => {
 
   const html = /*html*/ `
 		<div class="wrapper grid label">
-			<div class="menu fade-in">Menu</div>
+			<div class="menu fade-in">Contact:</div>
 			<div class="contributions fade-in">
 				<span class="shine">${(props.contributions / 1000).toFixed(1)}k</span> Contributions
 			</div>
