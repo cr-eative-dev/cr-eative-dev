@@ -14,7 +14,7 @@ const worker: ExportedHandler = {
     const { searchParams } = new URL(request.url);
     const theme = (searchParams.get('theme') ?? 'light') as 'light' | 'dark';
     const section = searchParams.get('section') ?? '';
-    let content = ':-)';
+    let content = 'cr.eative.dev';
 
     if (section === 'top') {
       const { contributions } = data;
@@ -38,12 +38,12 @@ const worker: ExportedHandler = {
       };
       const options = {
         dots: {
-          rows: 6,
-          size: 24,
-          gap: 5
+          rows: 0,
+          size: 0,
+          gap: 0
         },
         year: {
-          gap: 5
+          gap: 0
         }
       };
 
@@ -63,7 +63,7 @@ const worker: ExportedHandler = {
           return acc;
         }, 0) - options.year.gap;
 
-      content = main({ height: 290, years, sizes, length, location, theme, ...options });
+      content = main({ height: 0, years, sizes, length, location, theme, ...options });
     }
 
     return new Response(content, {
