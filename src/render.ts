@@ -2,7 +2,7 @@ import type { Year } from './worker';
 
 const BP_MEDIUM = 550;
 const BP_LARGE = 700;
-const BODY_COPY = ``;
+const BODY_COPY = `Software Developer, 3D Artist and Creative Director.`;
 
 interface Props {
   width?: number;
@@ -102,7 +102,7 @@ export const shared = /* css */ `
 		position: relative;
 		overflow: clip;
 
-		font-family: -apple-system,BlinkMacSystemFont,"Courier",monospace,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 		color: var(--color-text);
 	}
 
@@ -225,11 +225,6 @@ export const main = (props: Props & Main) => {
 			--duration: 980ms;
 			--delay: calc(var(--animate-in-copy-delay) + var(--i) * 10ms);
 		}
-		.intro span {
-			contain: content;
-			--duration: 980ms;
-			--delay: calc(var(--animate-in-copy-delay) + var(--i) * 10ms);
-		}
 
 		@media (width > ${BP_MEDIUM}px) {
 			.intro {
@@ -341,10 +336,27 @@ export const main = (props: Props & Main) => {
           .map((c, i) => `<span class="fade-in" style="--i: ${i};">${c}</span>`)
           .join('')}</p>
 			</article>
+			<article class="graph">
+				<div class="years" style="--w: ${props.length}; --h: ${props.sizes[0][1]};">
+					${props.years
+            .map(
+              (year, i) => /* html */ `
+						<div class="year year--${i}" style="--w: ${props.sizes[i][0]}; --h: ${props.sizes[i][1]};">
+							<div class="year__days">${days(year.days)}</div>
+							<div class="year__label label"><span>${date(i)}</span></div>
+						</div>
+					`
+            )
+            .join('')}
+				</div>
+			</article>
 		</main>
 	`;
 
-  return;
+  return svg(styles, html, {
+    height: `${props.height}`,
+    'data-theme': `${props.theme}`
+  });
 };
 
 export const top = (props: Props & { contributions: number }) => {
@@ -405,7 +417,7 @@ export const top = (props: Props & { contributions: number }) => {
 
   const html = /*html*/ `
 		<div class="wrapper grid label">
-			<div class="menu fade-in">Software Developer & 3D Artist.</div>
+			<div class="menu fade-in">Menu</div>
 			<div class="contributions fade-in">
 				<span class="shine">${(props.contributions / 1000).toFixed(1)}k</span> Contributions
 			</div>

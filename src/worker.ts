@@ -1,4 +1,4 @@
-import { fallback, link, top } from './render.js';
+import { fallback, link, main, top } from './render.js';
 import data from './stats.json';
 
 export type Year = {
@@ -14,7 +14,7 @@ const worker: ExportedHandler = {
     const { searchParams } = new URL(request.url);
     const theme = (searchParams.get('theme') ?? 'light') as 'light' | 'dark';
     const section = searchParams.get('section') ?? '';
-    let content = 'cr.eative.dev';
+    let content = ':-)';
 
     if (section === 'top') {
       const { contributions } = data;
@@ -30,6 +30,40 @@ const worker: ExportedHandler = {
       content = link({ height: 18, width: 100, index, theme })('GitHub');
     } else if (section == 'fallback') {
       content = fallback({ height: 180, width: 420, theme });
+    } else {
+      const years = data.years.slice(0, MAX_YEARS);
+      const location = {
+        city: (request.cf?.city || '') as string,
+        country: (request.cf?.country || '') as string
+      };
+      const options = {
+        dots: {
+          rows: 6,
+          size: 24,
+          gap: 5
+        },
+        year: {
+          gap: 5
+        }
+      };
+
+      // Used to give the containing div `contain: strict` for perforamnce reasons.
+      const sizes = years.map((year) => {
+        const columns = Math.ceil(year.days.length / options.dots.rows);
+        const width = columns * options.dots.size + (columns - 1) * options.dots.gap;
+        const height =
+          options.dots.rows * options.dots.size + (options.dots.rows - 1) * options.dots.gap;
+        return [width, height];
+      });
+
+      // Calculate total length based on the width of the columns and the year gap
+      const length =
+        sizes.reduce((acc, size) => {
+          acc += size[0] + options.year.gap;
+          return acc;
+        }, 0) - options.year.gap;
+
+      content = main({ height: 290, years, sizes, length, location, theme, ...options });
     }
 
     return new Response(content, {
