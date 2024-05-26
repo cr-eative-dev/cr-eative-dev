@@ -102,7 +102,7 @@ export const shared = /* css */ `
 		position: relative;
 		overflow: clip;
 
-		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+		font-family: -apple-system,BlinkMacSystemFont,"Courier",monospace,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 		color: var(--color-text);
 	}
 
@@ -335,20 +335,6 @@ export const main = (props: Props & Main) => {
 				<p>${BODY_COPY.split('')
           .map((c, i) => `<span class="fade-in" style="--i: ${i};">${c}</span>`)
           .join('')}</p>
-			</article>
-			<article class="graph">
-				<div class="years" style="--w: ${props.length}; --h: ${props.sizes[0][1]};">
-					${props.years
-            .map(
-              (year, i) => /* html */ `
-						<div class="year year--${i}" style="--w: ${props.sizes[i][0]}; --h: ${props.sizes[i][1]};">
-							<div class="year__days">${days(year.days)}</div>
-							<div class="year__label label"><span>${date(i)}</span></div>
-						</div>
-					`
-            )
-            .join('')}
-				</div>
 			</article>
 		</main>
 	`;
