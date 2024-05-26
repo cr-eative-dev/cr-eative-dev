@@ -209,7 +209,7 @@ export const main = (props: Props & Main) => {
 		}
 
 		.wrapper {
-			align-items: flex;
+			align-items: flex-end;
 			grid-template-rows: 1fr auto;
 			row-gap: 20px;
 		}
@@ -219,6 +219,11 @@ export const main = (props: Props & Main) => {
 			grid-area: 1 / 1 / span 1 / span 6;
 			font-size: 18px;
 			font-weight: 300;
+		}
+		.intro span {
+			contain: content;
+			--duration: 980ms;
+			--delay: calc(var(--animate-in-copy-delay) + var(--i) * 10ms);
 		}
 		.intro span {
 			contain: content;
