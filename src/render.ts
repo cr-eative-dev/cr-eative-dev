@@ -209,7 +209,7 @@ export const main = (props: Props & Main) => {
 		}
 
 		.wrapper {
-			align-items: flex-end;
+			align-items: flex;
 			grid-template-rows: 1fr auto;
 			row-gap: 20px;
 		}
