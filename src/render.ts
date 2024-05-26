@@ -200,7 +200,7 @@ export const main = (props: Props & Main) => {
 		:root {
 			--rows: ${props.dots.rows};
 			--size-width: 100cqw;
-			--size-height: 100px;
+			--size-height: ${props.height};
 			--size-dot-gap: ${props.dots.gap};
 			--size-dot: ${props.dots.size};
 			--size-year-gap: ${props.year.gap};
