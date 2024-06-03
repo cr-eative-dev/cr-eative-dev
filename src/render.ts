@@ -113,8 +113,6 @@ export const shared = /* css */ `
 		}
 	}
 
-	/* test */
-	
 	.label {
 		contain: content;
 		font-size: 14px;
