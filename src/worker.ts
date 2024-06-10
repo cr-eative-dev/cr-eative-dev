@@ -25,9 +25,9 @@ const worker: ExportedHandler = {
     } else if (section === 'link-linkedin') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('Linkedin');
-    } else if (section === 'link-repositories') {
+    } else if (section === 'link-repos') {
       const index = Number(searchParams.get('i')) ?? 0;
-      content = link({ height: 18, width: 100, index, theme })('Repositories');
+      content = link({ height: 18, width: 100, index, theme })('Repos');
     } else if (section == 'fallback') {
       content = fallback({ height: 180, width: 420, theme });
     } else {
