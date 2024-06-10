@@ -19,7 +19,10 @@ const worker: ExportedHandler = {
     if (section === 'top') {
       const { contributions } = data;
       content = top({ height: 20, contributions, theme });
-    }  else if (section === 'link-linkedin') {
+    } else if (section === 'link-website') {
+      const index = Number(searchParams.get('i')) ?? 0;
+      content = link({ height: 18, width: 100, index, theme })('Website');
+    } else if (section === 'link-linkedin') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('Linkedin');
     } else if (section === 'link-github') {
