@@ -18,8 +18,8 @@
 <img src="data:null;," width="100%" height="0" align="left" alt="">
 <a href="https://github.com/cr-eative-dev?tab=repositories" target="_blank">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-repositories&theme=dark">
-    <img src="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-repositories&theme=light&i=2" alt="visit my Repositories" width="100" height="18" align="left">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-repos&theme=dark">
+    <img src="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-repos&theme=light&i=2" alt="visit my Repos" width="100" height="18" align="left">
   </picture>
 </a>
 <img src="data:null;," width="100%" height="0" align="left" alt="">
