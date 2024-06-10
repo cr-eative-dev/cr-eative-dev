@@ -19,15 +19,15 @@ const worker: ExportedHandler = {
     if (section === 'top') {
       const { contributions } = data;
       content = top({ height: 20, contributions, theme });
-    } else if (section === 'link-website') {
-      const index = Number(searchParams.get('i')) ?? 0;
-      content = link({ height: 18, width: 100, index, theme })('Website');
-    } else if (section === 'link-linkedin') {
-      const index = Number(searchParams.get('i')) ?? 0;
-      content = link({ height: 18, width: 100, index, theme })('Linkedin');
     } else if (section === 'link-github') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('GitHub');
+    } else if (section === 'link-linkedin') {
+      const index = Number(searchParams.get('i')) ?? 0;
+      content = link({ height: 18, width: 100, index, theme })('Linkedin');
+    } else if (section === 'link-repositories') {
+      const index = Number(searchParams.get('i')) ?? 0;
+      content = link({ height: 18, width: 100, index, theme })('Repositories');
     } else if (section == 'fallback') {
       content = fallback({ height: 180, width: 420, theme });
     } else {
