@@ -2,12 +2,6 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=top&theme=dark">
   <img src="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=top&theme=light" width="100%" height="20" align="left">
 </picture>
-<a href="" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-website&theme=dark" label="Visit">
-    <img src="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-website&theme=light&i=0" alt="visit my website" width="100" height="18px" align="left">
-  </picture>
-</a>
 <img src="data:null;," width="100%" height="0" align="left" alt="">
 <a href="" target="_blank">
   <picture>
