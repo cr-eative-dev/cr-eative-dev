@@ -11,12 +11,12 @@
     "lint": "prettier --check ./{src,scripts}/*",
     "types": "tsc --noEmit"
   },
-  "dependencies": {
-    "@cloudflare/workers-types": "^4.20240502.0",
-    "@types/node": "^20.12.11",
-    "prettier": "^3.2.5",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "@types/node": "^20.14.9",
+    "prettier": "^3.3.2",
     "tsm": "^2.3.0",
-    "typescript": "^5.4.5",
-    "wrangler": "^3.55.0"
+    "typescript": "^5.5.3",
+    "wrangler": "^3.63.0"
   }
 }
