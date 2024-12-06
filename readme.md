@@ -9,10 +9,10 @@
   </picture>
 </a>
 <img src="data:null;," width="100%" height="0" align="left" alt="">
-<a href="" target="_blank">
+<a href="https://x.com/0xcreativedev" target="_blank">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-linkedin&theme=dark">
-    <img src="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-linkedin&theme=light&i=1" alt="visit my Linkedin profile" width="100" height="18" align="left">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-twitter&theme=dark">
+    <img src="https://cr-eative-dev.wild-mud-eaff.workers.dev/?section=link-twitter&theme=light&i=1" alt="visit my Twitter profile" width="100" height="18" align="left">
   </picture>
 </a>
 <img src="data:null;," width="100%" height="0" align="left" alt="">

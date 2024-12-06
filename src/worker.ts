@@ -22,9 +22,9 @@ const worker: ExportedHandler = {
     } else if (section === 'link-github') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('GitHub');
-    } else if (section === 'link-linkedin') {
+    } else if (section === 'link-twitter') {
       const index = Number(searchParams.get('i')) ?? 0;
-      content = link({ height: 18, width: 100, index, theme })('Linkedin');
+      content = link({ height: 18, width: 100, index, theme })('Twitter');
     } else if (section === 'link-repos') {
       const index = Number(searchParams.get('i')) ?? 0;
       content = link({ height: 18, width: 100, index, theme })('Repos');
